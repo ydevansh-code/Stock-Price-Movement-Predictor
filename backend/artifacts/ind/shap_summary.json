@@ -1,0 +1,102 @@
+[
+  {
+    "feature": "vix_change",
+    "mean_abs_shap": 0.241618
+  },
+  {
+    "feature": "rsi",
+    "mean_abs_shap": 0.050786
+  },
+  {
+    "feature": "gld_ret1",
+    "mean_abs_shap": 0.048427
+  },
+  {
+    "feature": "atr",
+    "mean_abs_shap": 0.044921
+  },
+  {
+    "feature": "vix_5d_change",
+    "mean_abs_shap": 0.04482
+  },
+  {
+    "feature": "oil_spy_ratio",
+    "mean_abs_shap": 0.040728
+  },
+  {
+    "feature": "close_to_low",
+    "mean_abs_shap": 0.038302
+  },
+  {
+    "feature": "atr_norm_ret",
+    "mean_abs_shap": 0.032556
+  },
+  {
+    "feature": "overnight_gap",
+    "mean_abs_shap": 0.030744
+  },
+  {
+    "feature": "vix_percentile",
+    "mean_abs_shap": 0.028273
+  },
+  {
+    "feature": "gld_ret21",
+    "mean_abs_shap": 0.023705
+  },
+  {
+    "feature": "ret_lag10",
+    "mean_abs_shap": 0.023418
+  },
+  {
+    "feature": "uso_ret1",
+    "mean_abs_shap": 0.020855
+  },
+  {
+    "feature": "ret_lag7",
+    "mean_abs_shap": 0.018105
+  },
+  {
+    "feature": "ret_lag5",
+    "mean_abs_shap": 0.01487
+  },
+  {
+    "feature": "stoch_k",
+    "mean_abs_shap": 0.012893
+  },
+  {
+    "feature": "intraday_range",
+    "mean_abs_shap": 0.012038
+  },
+  {
+    "feature": "range_compression",
+    "mean_abs_shap": 0.009995
+  },
+  {
+    "feature": "close_to_high",
+    "mean_abs_shap": 0.008275
+  },
+  {
+    "feature": "vix_above_ma20",
+    "mean_abs_shap": 0.006253
+  },
+  {
+    "feature": "volume_dev",
+    "mean_abs_shap": 0.00621
+  },
+  {
+    "feature": "weekly_ret",
+    "mean_abs_shap": 0.005959
+  },
+  {
+    "feature": "ret_lag8",
+    "mean_abs_shap": 0.004712
+  },
+  {
+    "feature": "bb_width",
+    "mean_abs_shap": 0.002324
+  },
+  {
+    "feature": "roc",
+    "mean_abs_shap": 0.000829
+  }
+]

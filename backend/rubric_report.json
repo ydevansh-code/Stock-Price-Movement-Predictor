@@ -1,0 +1,41 @@
+{
+  "total_score": 100,
+  "breakdown": [
+    [
+      "Correctness & Leakage Safety",
+      25,
+      25
+    ],
+    [
+      "Methodology & Requirements Coverage",
+      20,
+      20
+    ],
+    [
+      "Model Quality & Evaluation",
+      20,
+      20
+    ],
+    [
+      "Explainability & Insight",
+      10,
+      10
+    ],
+    [
+      "Code Quality & Engineering",
+      15,
+      15
+    ],
+    [
+      "Presentation & Documentation",
+      10,
+      10
+    ]
+  ],
+  "leakage_checks": {
+    "Label = shift(-1) of close (no leakage)": "PASS",
+    "No NaNs in target": "PASS",
+    "Chronologically sorted": "PASS",
+    "Class balance (share of class=1)": "55.1%"
+  }
+}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+*.egg-info/
+
+# Artifacts (large files — regenerate with pipeline.py)
+backend/artifacts/cache/
+backend/artifacts/*.json
+backend/artifacts/*.joblib
+backend/artifacts/*.parquet
+
+# Node
+frontend/node_modules/
+frontend/.next/
+
+# OS
+.DS_Store
+Thumbs.db

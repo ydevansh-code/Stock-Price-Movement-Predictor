@@ -1,0 +1,32 @@
+[
+  {
+    "fold": 1,
+    "train_size": 3249,
+    "accuracy": 0.5926,
+    "roc_auc": 0.5429
+  },
+  {
+    "fold": 2,
+    "train_size": 3411,
+    "accuracy": 0.5123,
+    "roc_auc": 0.488
+  },
+  {
+    "fold": 3,
+    "train_size": 3573,
+    "accuracy": 0.5432,
+    "roc_auc": 0.5418
+  },
+  {
+    "fold": 4,
+    "train_size": 3735,
+    "accuracy": 0.5185,
+    "roc_auc": 0.4963
+  },
+  {
+    "fold": 5,
+    "train_size": 3897,
+    "accuracy": 0.4788,
+    "roc_auc": 0.564
+  }
+]
