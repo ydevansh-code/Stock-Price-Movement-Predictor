@@ -3,30 +3,30 @@
     "fold": 1,
     "train_size": 2145,
     "accuracy": 0.6729,
-    "roc_auc": 0.7384
+    "roc_auc": 0.7528
   },
   {
     "fold": 2,
     "train_size": 2252,
-    "accuracy": 0.5981,
-    "roc_auc": 0.666
+    "accuracy": 0.5794,
+    "roc_auc": 0.6793
   },
   {
     "fold": 3,
     "train_size": 2359,
     "accuracy": 0.6168,
-    "roc_auc": 0.6233
+    "roc_auc": 0.6143
   },
   {
     "fold": 4,
     "train_size": 2466,
-    "accuracy": 0.6449,
-    "roc_auc": 0.6586
+    "accuracy": 0.6355,
+    "roc_auc": 0.6447
   },
   {
     "fold": 5,
     "train_size": 2573,
     "accuracy": 0.6055,
-    "roc_auc": 0.5966
+    "roc_auc": 0.587
   }
 ]

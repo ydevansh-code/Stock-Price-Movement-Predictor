@@ -20,6 +20,7 @@ import FeatureImportanceChart from "../components/FeatureImportance";
 import WalkForwardChart from "../components/WalkForwardChart";
 import CalibrationChart from "../components/CalibrationChart";
 import LandingView from "../components/LandingView";
+import NextDayCard from "../components/NextDayCard";
 import ThemeToggle from "../components/ThemeToggle";
 import Skeleton from "../components/Skeleton";
 
@@ -44,6 +45,7 @@ export default function Dashboard() {
   const [bt, setBt] = useState<BacktestResult | null>(null);
   const [wf, setWf] = useState<WalkForwardFold[] | null>(null);
   const [cal, setCal] = useState<CalibrationPoint[] | null>(null);
+  const [nextSignal, setNextSignal] = useState<import("../lib/types").NextDaySignal | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -55,8 +57,9 @@ export default function Dashboard() {
       api.backtest(market),
       api.walkForward(market),
       api.calibration(market),
+      api.nextDay(market).catch(() => null),
     ])
-      .then(([b, t, p, f, bt, wf, cal]) => {
+      .then(([b, t, p, f, bt, wf, cal, ns]) => {
         setBalance(b);
         setTable(t);
         setPreds(p);
@@ -64,6 +67,7 @@ export default function Dashboard() {
         setBt(bt);
         setWf(wf);
         setCal(cal);
+        setNextSignal(ns);
       })
       .catch(() =>
         setError(`Could not connect to backend for ${market.toUpperCase()}. Run the pipeline first.`)
@@ -117,6 +121,16 @@ export default function Dashboard() {
               </button>
             </div>
             <button
+              className="btn-terminal active"
+              onClick={() => {
+                setActive("overview");
+                api.nextDay(market).then(setNextSignal);
+              }}
+              style={{ background: "rgba(16, 185, 129, 0.18)", borderColor: "var(--bull)", color: "var(--bull)", cursor: "pointer" }}
+            >
+              🔮 Predict Tomorrow
+            </button>
+            <button
               className={`btn-terminal ${active === "thesis" ? "active" : ""}`}
               onClick={() => setActive(active === "thesis" ? "overview" : "thesis")}
             >
@@ -148,6 +162,11 @@ export default function Dashboard() {
 
         {active !== "thesis" && allData && (
           <div className="animate-slide-up" style={{ display: "grid", gap: "1.25rem" }}>
+            <NextDayCard
+              signal={nextSignal}
+              onRefresh={() => api.nextDay(market).then(setNextSignal)}
+            />
+
             <KpiRow
               bestAcc={bestRow!.accuracy}
               bestModel={bestRow!.model}

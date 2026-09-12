@@ -1,127 +1,127 @@
 [
   {
-    "feature": "gld_ret1",
-    "lgbm_importance": 760.0,
-    "lr_coef_abs": 0.028465
-  },
-  {
     "feature": "gld_ret5",
-    "lgbm_importance": 748.0,
+    "lgbm_importance": 858.0,
     "lr_coef_abs": 0.025391
   },
   {
-    "feature": "adx",
-    "lgbm_importance": 745.0,
-    "lr_coef_abs": 0.002566
-  },
-  {
-    "feature": "volume_dev",
-    "lgbm_importance": 733.0,
-    "lr_coef_abs": 0.004668
-  },
-  {
     "feature": "overnight_gap",
-    "lgbm_importance": 713.0,
+    "lgbm_importance": 837.0,
     "lr_coef_abs": 0.053868
   },
   {
-    "feature": "uso_ret1",
-    "lgbm_importance": 709.0,
-    "lr_coef_abs": 0.029739
-  },
-  {
-    "feature": "ret_lag3",
-    "lgbm_importance": 705.0,
-    "lr_coef_abs": 0.011873
-  },
-  {
-    "feature": "ret_lag6",
-    "lgbm_importance": 701.0,
-    "lr_coef_abs": 0.015509
+    "feature": "gld_ret1",
+    "lgbm_importance": 809.0,
+    "lr_coef_abs": 0.028465
   },
   {
     "feature": "tlt_ret1",
-    "lgbm_importance": 696.0,
+    "lgbm_importance": 802.0,
     "lr_coef_abs": 0.001126
   },
   {
-    "feature": "ret_lag8",
-    "lgbm_importance": 685.0,
-    "lr_coef_abs": 0.014017
-  },
-  {
-    "feature": "tlt_ret21",
-    "lgbm_importance": 673.0,
-    "lr_coef_abs": 0.049759
-  },
-  {
-    "feature": "ret_lag10",
-    "lgbm_importance": 664.0,
-    "lr_coef_abs": 0.04135
-  },
-  {
-    "feature": "uso_ret21",
-    "lgbm_importance": 662.0,
-    "lr_coef_abs": 0.022427
+    "feature": "uso_ret1",
+    "lgbm_importance": 792.0,
+    "lr_coef_abs": 0.029739
   },
   {
     "feature": "close_to_low",
-    "lgbm_importance": 655.0,
+    "lgbm_importance": 789.0,
     "lr_coef_abs": 0.075339
   },
   {
-    "feature": "atr",
-    "lgbm_importance": 646.0,
-    "lr_coef_abs": 0.015934
+    "feature": "ret_lag3",
+    "lgbm_importance": 784.0,
+    "lr_coef_abs": 0.011873
+  },
+  {
+    "feature": "ret_lag10",
+    "lgbm_importance": 773.0,
+    "lr_coef_abs": 0.04135
+  },
+  {
+    "feature": "volume_dev",
+    "lgbm_importance": 771.0,
+    "lr_coef_abs": 0.004668
+  },
+  {
+    "feature": "uso_ret21",
+    "lgbm_importance": 763.0,
+    "lr_coef_abs": 0.022427
+  },
+  {
+    "feature": "ret_lag6",
+    "lgbm_importance": 758.0,
+    "lr_coef_abs": 0.015509
   },
   {
     "feature": "ret_lag9",
-    "lgbm_importance": 643.0,
+    "lgbm_importance": 756.0,
     "lr_coef_abs": 0.016986
   },
   {
-    "feature": "macd_hist",
-    "lgbm_importance": 643.0,
-    "lr_coef_abs": 0.032168
+    "feature": "atr",
+    "lgbm_importance": 755.0,
+    "lr_coef_abs": 0.015934
   },
   {
-    "feature": "stock_bond_diverge",
-    "lgbm_importance": 629.0,
-    "lr_coef_abs": 0.0101
+    "feature": "adx",
+    "lgbm_importance": 752.0,
+    "lr_coef_abs": 0.002566
+  },
+  {
+    "feature": "tlt_ret21",
+    "lgbm_importance": 752.0,
+    "lr_coef_abs": 0.049759
   },
   {
     "feature": "bb_width",
-    "lgbm_importance": 615.0,
+    "lgbm_importance": 735.0,
     "lr_coef_abs": 0.018951
   },
   {
-    "feature": "atr_norm_ret",
-    "lgbm_importance": 614.0,
-    "lr_coef_abs": 0.044004
+    "feature": "ret_lag8",
+    "lgbm_importance": 720.0,
+    "lr_coef_abs": 0.014017
+  },
+  {
+    "feature": "stock_bond_diverge",
+    "lgbm_importance": 710.0,
+    "lr_coef_abs": 0.0101
+  },
+  {
+    "feature": "macd_hist",
+    "lgbm_importance": 695.0,
+    "lr_coef_abs": 0.032168
+  },
+  {
+    "feature": "vix_change",
+    "lgbm_importance": 693.0,
+    "lr_coef_abs": 0.063359
   },
   {
     "feature": "volatility",
-    "lgbm_importance": 589.0,
+    "lgbm_importance": 691.0,
     "lr_coef_abs": 0.034813
   },
   {
     "feature": "stoch_k",
-    "lgbm_importance": 563.0,
+    "lgbm_importance": 640.0,
     "lr_coef_abs": 0.003113
   },
   {
-    "feature": "vix_change",
-    "lgbm_importance": 535.0,
-    "lr_coef_abs": 0.063359
+    "feature": "weekly_ret",
+    "lgbm_importance": 631.0,
+    "lr_coef_abs": 0.002156
+  },
+  {
+    "feature": "atr_norm_ret",
+    "lgbm_importance": 617.0,
+    "lr_coef_abs": 0.044004
   },
   {
     "feature": "roc",
-    "lgbm_importance": 529.0,
+    "lgbm_importance": 565.0,
     "lr_coef_abs": 0.012603
-  },
-  {
-    "feature": "weekly_ret",
-    "lgbm_importance": 513.0,
-    "lr_coef_abs": 0.002156
   }
 ]

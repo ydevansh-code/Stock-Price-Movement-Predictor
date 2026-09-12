@@ -1,26 +1,26 @@
 [
   {
-    "mean_predicted": 0.2844,
-    "fraction_positive": 0.1
+    "mean_predicted": 0.2841,
+    "fraction_positive": 0.2105
   },
   {
-    "mean_predicted": 0.351,
-    "fraction_positive": 0.4
+    "mean_predicted": 0.3506,
+    "fraction_positive": 0.3614
   },
   {
-    "mean_predicted": 0.456,
-    "fraction_positive": 0.5108
+    "mean_predicted": 0.4533,
+    "fraction_positive": 0.5366
   },
   {
-    "mean_predicted": 0.549,
-    "fraction_positive": 0.524
+    "mean_predicted": 0.5487,
+    "fraction_positive": 0.5137
   },
   {
-    "mean_predicted": 0.6385,
-    "fraction_positive": 0.5706
+    "mean_predicted": 0.6427,
+    "fraction_positive": 0.5843
   },
   {
-    "mean_predicted": 0.7192,
-    "fraction_positive": 0.7059
+    "mean_predicted": 0.7318,
+    "fraction_positive": 0.72
   }
 ]

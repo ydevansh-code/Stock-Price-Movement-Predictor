@@ -1,102 +1,102 @@
 [
   {
     "feature": "macd_hist",
-    "mean_abs_shap": 0.128046
-  },
-  {
-    "feature": "ret_lag3",
-    "mean_abs_shap": 0.126196
-  },
-  {
-    "feature": "uso_ret21",
-    "mean_abs_shap": 0.117535
+    "mean_abs_shap": 0.190999
   },
   {
     "feature": "overnight_gap",
-    "mean_abs_shap": 0.115168
+    "mean_abs_shap": 0.182597
+  },
+  {
+    "feature": "ret_lag3",
+    "mean_abs_shap": 0.181067
   },
   {
     "feature": "vix_change",
-    "mean_abs_shap": 0.107556
+    "mean_abs_shap": 0.175804
   },
   {
-    "feature": "tlt_ret21",
-    "mean_abs_shap": 0.100945
-  },
-  {
-    "feature": "volume_dev",
-    "mean_abs_shap": 0.098092
+    "feature": "uso_ret21",
+    "mean_abs_shap": 0.17419
   },
   {
     "feature": "atr_norm_ret",
-    "mean_abs_shap": 0.091495
-  },
-  {
-    "feature": "gld_ret1",
-    "mean_abs_shap": 0.088015
-  },
-  {
-    "feature": "adx",
-    "mean_abs_shap": 0.087735
+    "mean_abs_shap": 0.168184
   },
   {
     "feature": "ret_lag9",
-    "mean_abs_shap": 0.083674
+    "mean_abs_shap": 0.14897
+  },
+  {
+    "feature": "volume_dev",
+    "mean_abs_shap": 0.14623
+  },
+  {
+    "feature": "tlt_ret21",
+    "mean_abs_shap": 0.138041
+  },
+  {
+    "feature": "gld_ret1",
+    "mean_abs_shap": 0.133951
   },
   {
     "feature": "weekly_ret",
-    "mean_abs_shap": 0.083027
-  },
-  {
-    "feature": "ret_lag10",
-    "mean_abs_shap": 0.081392
-  },
-  {
-    "feature": "uso_ret1",
-    "mean_abs_shap": 0.080955
+    "mean_abs_shap": 0.125059
   },
   {
     "feature": "gld_ret5",
-    "mean_abs_shap": 0.0807
+    "mean_abs_shap": 0.124372
+  },
+  {
+    "feature": "adx",
+    "mean_abs_shap": 0.124318
   },
   {
     "feature": "close_to_low",
-    "mean_abs_shap": 0.077958
+    "mean_abs_shap": 0.12299
   },
   {
-    "feature": "tlt_ret1",
-    "mean_abs_shap": 0.076818
+    "feature": "ret_lag10",
+    "mean_abs_shap": 0.119927
   },
   {
     "feature": "ret_lag6",
-    "mean_abs_shap": 0.076685
+    "mean_abs_shap": 0.117972
   },
   {
-    "feature": "stock_bond_diverge",
-    "mean_abs_shap": 0.066915
+    "feature": "tlt_ret1",
+    "mean_abs_shap": 0.115558
+  },
+  {
+    "feature": "uso_ret1",
+    "mean_abs_shap": 0.113667
   },
   {
     "feature": "bb_width",
-    "mean_abs_shap": 0.065147
-  },
-  {
-    "feature": "volatility",
-    "mean_abs_shap": 0.063529
+    "mean_abs_shap": 0.109944
   },
   {
     "feature": "atr",
-    "mean_abs_shap": 0.060755
+    "mean_abs_shap": 0.106788
   },
   {
     "feature": "ret_lag8",
-    "mean_abs_shap": 0.058601
+    "mean_abs_shap": 0.105965
   },
   {
-    "feature": "stoch_k",
-    "mean_abs_shap": 0.057508
+    "feature": "stock_bond_diverge",
+    "mean_abs_shap": 0.10512
+  },
+  {
+    "feature": "volatility",
+    "mean_abs_shap": 0.102937
   },
   {
     "feature": "roc",
-    "mean_abs_shap": 0.056579
+    "mean_abs_shap": 0.099048
+  },
+  {
+    "feature": "stoch_k",
+    "mean_abs_shap": 0.089308
   }
 ]

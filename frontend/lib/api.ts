@@ -16,4 +16,5 @@ export const api = {
   backtest: (market = "us") => get<import("./types").BacktestResult>("/backtest", market),
   walkForward: (market = "us") => get<import("./types").WalkForwardFold[]>("/walk-forward", market),
   calibration: (market = "us") => get<import("./types").CalibrationPoint[]>("/calibration", market),
+  nextDay: (market = "us") => get<import("./types").NextDaySignal>("/next-day", market),
 };

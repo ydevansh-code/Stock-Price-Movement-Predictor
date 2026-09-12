@@ -58,3 +58,24 @@ export interface CalibrationPoint {
   mean_predicted: number;
   fraction_positive: number;
 }
+
+export interface NextDaySignal {
+  market: string;
+  ticker: string;
+  as_of_date: string;
+  next_trading_day: string;
+  latest_close: number;
+  predicted_direction: "UP" | "DOWN";
+  probability_up: number;
+  confidence_level: string;
+  model_signals: {
+    lightgbm_v2: { dir: string; prob: number };
+    random_forest_v2: { dir: string; prob: number };
+    logreg_v2: { dir: string; prob: number };
+  };
+  key_features: {
+    rsi_14: number;
+    ret_5d: number;
+    vix: number;
+  };
+}

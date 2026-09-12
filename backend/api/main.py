@@ -97,6 +97,12 @@ def calibration(request: Request, market: str = "us"):
     return _load("calibration", market)
 
 
+@app.get("/api/next-day")
+@limiter.limit(RATE_LIMIT)
+def next_day(request: Request, market: str = "us"):
+    return _load("next_day_signal", market)
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}

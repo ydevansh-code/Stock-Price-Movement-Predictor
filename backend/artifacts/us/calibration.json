@@ -1,42 +1,42 @@
 [
   {
-    "mean_predicted": 0.0729,
-    "fraction_positive": 0.5
+    "mean_predicted": 0.0677,
+    "fraction_positive": 0.4375
   },
   {
-    "mean_predicted": 0.1563,
-    "fraction_positive": 0.7692
+    "mean_predicted": 0.1512,
+    "fraction_positive": 0.6122
   },
   {
-    "mean_predicted": 0.2511,
-    "fraction_positive": 0.56
+    "mean_predicted": 0.2509,
+    "fraction_positive": 0.5778
   },
   {
-    "mean_predicted": 0.3539,
-    "fraction_positive": 0.5135
+    "mean_predicted": 0.3473,
+    "fraction_positive": 0.5192
   },
   {
-    "mean_predicted": 0.4514,
-    "fraction_positive": 0.564
+    "mean_predicted": 0.4513,
+    "fraction_positive": 0.5338
   },
   {
-    "mean_predicted": 0.5538,
-    "fraction_positive": 0.5161
+    "mean_predicted": 0.5512,
+    "fraction_positive": 0.5696
   },
   {
-    "mean_predicted": 0.6488,
-    "fraction_positive": 0.5746
+    "mean_predicted": 0.6543,
+    "fraction_positive": 0.5652
   },
   {
-    "mean_predicted": 0.7459,
-    "fraction_positive": 0.5584
+    "mean_predicted": 0.748,
+    "fraction_positive": 0.5806
   },
   {
-    "mean_predicted": 0.8327,
-    "fraction_positive": 0.5079
+    "mean_predicted": 0.8467,
+    "fraction_positive": 0.4921
   },
   {
-    "mean_predicted": 0.9151,
-    "fraction_positive": 0.6667
+    "mean_predicted": 0.9296,
+    "fraction_positive": 0.5106
   }
 ]

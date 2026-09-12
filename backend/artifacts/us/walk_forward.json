@@ -2,31 +2,31 @@
   {
     "fold": 1,
     "train_size": 3249,
-    "accuracy": 0.5926,
-    "roc_auc": 0.5429
+    "accuracy": 0.5802,
+    "roc_auc": 0.5238
   },
   {
     "fold": 2,
     "train_size": 3411,
-    "accuracy": 0.5123,
-    "roc_auc": 0.488
+    "accuracy": 0.4938,
+    "roc_auc": 0.5128
   },
   {
     "fold": 3,
     "train_size": 3573,
-    "accuracy": 0.5432,
-    "roc_auc": 0.5418
+    "accuracy": 0.4753,
+    "roc_auc": 0.5201
   },
   {
     "fold": 4,
     "train_size": 3735,
-    "accuracy": 0.5185,
-    "roc_auc": 0.4963
+    "accuracy": 0.5247,
+    "roc_auc": 0.51
   },
   {
     "fold": 5,
     "train_size": 3897,
-    "accuracy": 0.4788,
-    "roc_auc": 0.564
+    "accuracy": 0.4848,
+    "roc_auc": 0.5659
   }
 ]

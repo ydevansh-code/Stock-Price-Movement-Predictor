@@ -22,7 +22,7 @@ args = parser.parse_args()
 os.environ["MARKET"] = args.market
 
 from src import baselines, evaluation
-from src.config import ARTIFACTS, RANDOM_SEED, TEST_SPLIT, TICKER
+from src.config import ARTIFACTS, RANDOM_SEED, TEST_SPLIT, TICKER, MARKET
 from src.data import loader, validator
 from src.features import engineered_features as eng
 from src.features import engineered_features_v2 as eng_v2
@@ -106,7 +106,7 @@ def run() -> None:
     X_v2_tr, X_v2_te, y_v2_tr, y_v2_te = chronological_split(X_v2, y_v2)
     # LightGBM handles its own scaling internally via histogram binning,
     # but we still scale for consistency with the other models in this pipeline.
-    Xv_tr_s, Xv_te_s, _ = scale(X_v2_tr, X_v2_te, "scaler_v2")
+    Xv_tr_s, Xv_te_s, scaler_v2 = scale(X_v2_tr, X_v2_te, "scaler_v2")
 
     from src.features.feature_selector import select_top_features
     top25 = select_top_features(Xv_tr_s, y_v2_tr, top_k=25)
@@ -257,6 +257,48 @@ def run() -> None:
             "ensemble": evaluation.metrics(f"Ensemble {h}d", h_y_te.values, (p_ens > 0.5).astype(int), p_ens),
         })
     _save("multi_horizon_comparison", multi_horizon)
+
+    latest_features = eng_v2.build(df).iloc[[-1]]
+    latest_features_scaled = pd.DataFrame(
+        scaler_v2.transform(latest_features),
+        index=latest_features.index,
+        columns=latest_features.columns
+    )
+    latest_top25 = latest_features_scaled[top25] if top25 else latest_features_scaled
+
+    pred_lgbm_prob = float(lgbm.predict_proba(latest_top25)[:, 1][0])
+    pred_rf_prob = float(rf_v2.predict_proba(latest_top25)[:, 1][0]) if rf_v2 is not None else pred_lgbm_prob
+    pred_lr_prob = float(lr_v2.predict_proba(latest_top25)[:, 1][0]) if lr_v2 is not None else pred_lgbm_prob
+
+    ens_prob = 0.45 * pred_lgbm_prob + 0.45 * pred_rf_prob + 0.10 * pred_lr_prob
+    predicted_direction = "UP" if ens_prob >= 0.5 else "DOWN"
+
+    last_date = df.index[-1]
+    next_date = last_date + pd.Timedelta(days=1)
+    while next_date.weekday() >= 5:
+        next_date += pd.Timedelta(days=1)
+
+    next_day_out = {
+        "market": MARKET.upper(),
+        "ticker": TICKER,
+        "as_of_date": last_date.strftime("%Y-%m-%d"),
+        "next_trading_day": next_date.strftime("%Y-%m-%d"),
+        "latest_close": round(float(df["close"].iloc[-1]), 2),
+        "predicted_direction": predicted_direction,
+        "probability_up": round(ens_prob, 4),
+        "confidence_level": "High Conviction" if abs(ens_prob - 0.5) > 0.04 else "Moderate Conviction",
+        "model_signals": {
+            "lightgbm_v2": {"dir": "UP" if pred_lgbm_prob >= 0.5 else "DOWN", "prob": round(pred_lgbm_prob, 4)},
+            "random_forest_v2": {"dir": "UP" if pred_rf_prob >= 0.5 else "DOWN", "prob": round(pred_rf_prob, 4)},
+            "logreg_v2": {"dir": "UP" if pred_lr_prob >= 0.5 else "DOWN", "prob": round(pred_lr_prob, 4)},
+        },
+        "key_features": {
+            "rsi_14": round(float(latest_features.get("rsi_14", pd.Series([50])).iloc[0]), 2) if "rsi_14" in latest_features else 50.0,
+            "ret_5d": round(float(latest_features.get("ret_5d", pd.Series([0])).iloc[0] * 100), 2) if "ret_5d" in latest_features else 0.0,
+            "vix": round(float(latest_features.get("vix_close", pd.Series([18])).iloc[0]), 2) if "vix_close" in latest_features else 18.0,
+        }
+    }
+    _save("next_day_signal", next_day_out)
 
     # ── Summary ───────────────────────────────────────────────────────────────
     print("\n" + "=" * 50)

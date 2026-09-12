@@ -268,7 +268,33 @@ plt.tight_layout()
 plt.show()
 """))
 
-cells.append(nbf.v4.new_markdown_cell("""## 9. Honest Quantitative Market Classification Analysis
+cells.append(nbf.v4.new_markdown_cell("""## 9. Live Forward Inference: Predicting Tomorrow's Direction
+Now that the models have been validated, we use the latest market close data to forecast the **upcoming trading session's direction** with model probabilities.
+"""))
+
+cells.append(nbf.v4.new_code_cell("""# Extract the latest feature vector (most recent available trading close)
+latest_idx = eng_features.dropna().index[-1]
+latest_features = eng_features.loc[[latest_idx]]
+latest_close = float(df.loc[latest_idx, 'close'])
+
+# Scale using the training-fitted scaler
+latest_scaled = scaler_eng.transform(latest_features)
+
+# Generate forward prediction
+forward_prob = float(model_eng.predict_proba(latest_scaled)[:, 1][0])
+forward_dir = "UP (BULLISH)" if forward_prob >= 0.5 else "DOWN (BEARISH)"
+
+print("=" * 60)
+print("             LIVE FORWARD PREDICTION FOR NEXT TRADING DAY     ")
+print("=" * 60)
+print(f"As of Latest Close:  {latest_idx.strftime('%Y-%m-%d')}  (${latest_close:.2f})")
+print(f"Predicted Direction: {forward_dir}")
+print(f"Probability (Up):    {forward_prob * 100:.2f}%")
+print(f"Signal Conviction:   {'High' if abs(forward_prob - 0.5) > 0.04 else 'Moderate'}")
+print("=" * 60)
+"""))
+
+cells.append(nbf.v4.new_markdown_cell("""## 10. Honest Quantitative Market Classification Analysis
 ### Key Findings & Insights:
 1. **The Efficient Market Boundary:** Daily equity price movements closely approximate martingales. In an out-of-sample forward test, real directional models hover between 50% and 53% accuracy.
 2. **The Majority Baseline Trap:** The naive Majority Class baseline achieves ~54.8% accuracy simply because the US market had a secular upward drift during the holdout period. However, its ROC-AUC is precisely 0.5000 (pure chance) and it provides zero risk management capability.
