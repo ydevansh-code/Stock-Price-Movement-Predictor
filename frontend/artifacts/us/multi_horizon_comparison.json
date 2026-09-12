@@ -1,0 +1,221 @@
+[
+  {
+    "horizon_days": 1,
+    "persist": {
+      "model": "Persistence",
+      "accuracy": 0.5089,
+      "precision": 0.553,
+      "recall": 0.552,
+      "f1": 0.5525,
+      "roc_auc": 0.5
+    },
+    "majority": {
+      "model": "Majority Class",
+      "accuracy": 0.5492,
+      "precision": 0.5492,
+      "recall": 1.0,
+      "f1": 0.709,
+      "roc_auc": 0.5
+    },
+    "rf": {
+      "model": "RF 1d",
+      "accuracy": 0.5463,
+      "precision": 0.549,
+      "recall": 0.9731,
+      "f1": 0.702,
+      "roc_auc": 0.495,
+      "confusion_matrix": [
+        [
+          12,
+          446
+        ],
+        [
+          15,
+          543
+        ]
+      ]
+    },
+    "lgbm": {
+      "model": "LightGBM 1d",
+      "accuracy": 0.5384,
+      "precision": 0.546,
+      "recall": 0.9462,
+      "f1": 0.6925,
+      "roc_auc": 0.4993,
+      "confusion_matrix": [
+        [
+          19,
+          439
+        ],
+        [
+          30,
+          528
+        ]
+      ]
+    },
+    "ensemble": {
+      "model": "Ensemble 1d",
+      "accuracy": 0.5404,
+      "precision": 0.5464,
+      "recall": 0.9606,
+      "f1": 0.6966,
+      "roc_auc": 0.4963,
+      "confusion_matrix": [
+        [
+          13,
+          445
+        ],
+        [
+          22,
+          536
+        ]
+      ]
+    }
+  },
+  {
+    "horizon_days": 3,
+    "persist": {
+      "model": "Persistence",
+      "accuracy": 0.5157,
+      "precision": 0.5886,
+      "recall": 0.5886,
+      "f1": 0.5886,
+      "roc_auc": 0.5
+    },
+    "majority": {
+      "model": "Majority Class",
+      "accuracy": 0.5886,
+      "precision": 0.5886,
+      "recall": 1.0,
+      "f1": 0.741,
+      "roc_auc": 0.5
+    },
+    "rf": {
+      "model": "RF 3d",
+      "accuracy": 0.5837,
+      "precision": 0.5883,
+      "recall": 0.9749,
+      "f1": 0.7338,
+      "roc_auc": 0.5374,
+      "confusion_matrix": [
+        [
+          10,
+          408
+        ],
+        [
+          15,
+          583
+        ]
+      ]
+    },
+    "lgbm": {
+      "model": "LightGBM 3d",
+      "accuracy": 0.5837,
+      "precision": 0.6028,
+      "recall": 0.8579,
+      "f1": 0.7081,
+      "roc_auc": 0.5239,
+      "confusion_matrix": [
+        [
+          80,
+          338
+        ],
+        [
+          85,
+          513
+        ]
+      ]
+    },
+    "ensemble": {
+      "model": "Ensemble 3d",
+      "accuracy": 0.5787,
+      "precision": 0.5934,
+      "recall": 0.903,
+      "f1": 0.7162,
+      "roc_auc": 0.5293,
+      "confusion_matrix": [
+        [
+          48,
+          370
+        ],
+        [
+          58,
+          540
+        ]
+      ]
+    }
+  },
+  {
+    "horizon_days": 5,
+    "persist": {
+      "model": "Persistence",
+      "accuracy": 0.5025,
+      "precision": 0.5882,
+      "recall": 0.5873,
+      "f1": 0.5878,
+      "roc_auc": 0.5
+    },
+    "majority": {
+      "model": "Majority Class",
+      "accuracy": 0.6039,
+      "precision": 0.6039,
+      "recall": 1.0,
+      "f1": 0.7531,
+      "roc_auc": 0.5
+    },
+    "rf": {
+      "model": "RF 5d",
+      "accuracy": 0.6059,
+      "precision": 0.607,
+      "recall": 0.9853,
+      "f1": 0.7512,
+      "roc_auc": 0.5406,
+      "confusion_matrix": [
+        [
+          11,
+          391
+        ],
+        [
+          9,
+          604
+        ]
+      ]
+    },
+    "lgbm": {
+      "model": "LightGBM 5d",
+      "accuracy": 0.601,
+      "precision": 0.6109,
+      "recall": 0.9347,
+      "f1": 0.7389,
+      "roc_auc": 0.5564,
+      "confusion_matrix": [
+        [
+          37,
+          365
+        ],
+        [
+          40,
+          573
+        ]
+      ]
+    },
+    "ensemble": {
+      "model": "Ensemble 5d",
+      "accuracy": 0.6069,
+      "precision": 0.6103,
+      "recall": 0.9657,
+      "f1": 0.7479,
+      "roc_auc": 0.5562,
+      "confusion_matrix": [
+        [
+          24,
+          378
+        ],
+        [
+          21,
+          592
+        ]
+      ]
+    }
+  }
+]

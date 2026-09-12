@@ -1,0 +1,20 @@
+[
+  {
+    "split": "all",
+    "up_pct": 0.5507,
+    "down_pct": 0.4493,
+    "n": 5137
+  },
+  {
+    "split": "train",
+    "up_pct": 0.5515,
+    "down_pct": 0.4485,
+    "n": 4109
+  },
+  {
+    "split": "test",
+    "up_pct": 0.5477,
+    "down_pct": 0.4523,
+    "n": 1028
+  }
+]

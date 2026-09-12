@@ -1,0 +1,29 @@
+{
+  "market": "IND",
+  "ticker": "^NSEI",
+  "as_of_date": "2026-09-11",
+  "next_trading_day": "2026-09-14",
+  "latest_close": 23398.1,
+  "predicted_direction": "UP",
+  "probability_up": 0.5538,
+  "confidence_level": "High Conviction",
+  "model_signals": {
+    "lightgbm_v2": {
+      "dir": "UP",
+      "prob": 0.6115
+    },
+    "random_forest_v2": {
+      "dir": "DOWN",
+      "prob": 0.4992
+    },
+    "logreg_v2": {
+      "dir": "UP",
+      "prob": 0.5393
+    }
+  },
+  "key_features": {
+    "rsi_14": 50.0,
+    "ret_5d": 0.0,
+    "vix": 18.0
+  }
+}

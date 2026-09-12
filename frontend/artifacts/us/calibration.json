@@ -1,0 +1,42 @@
+[
+  {
+    "mean_predicted": 0.0677,
+    "fraction_positive": 0.4375
+  },
+  {
+    "mean_predicted": 0.1512,
+    "fraction_positive": 0.6122
+  },
+  {
+    "mean_predicted": 0.2509,
+    "fraction_positive": 0.5778
+  },
+  {
+    "mean_predicted": 0.3473,
+    "fraction_positive": 0.5192
+  },
+  {
+    "mean_predicted": 0.4513,
+    "fraction_positive": 0.5338
+  },
+  {
+    "mean_predicted": 0.5512,
+    "fraction_positive": 0.5696
+  },
+  {
+    "mean_predicted": 0.6543,
+    "fraction_positive": 0.5652
+  },
+  {
+    "mean_predicted": 0.748,
+    "fraction_positive": 0.5806
+  },
+  {
+    "mean_predicted": 0.8467,
+    "fraction_positive": 0.4921
+  },
+  {
+    "mean_predicted": 0.9296,
+    "fraction_positive": 0.5106
+  }
+]

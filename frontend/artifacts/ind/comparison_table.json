@@ -1,0 +1,144 @@
+[
+  {
+    "model": "Persistence",
+    "accuracy": 0.5307,
+    "precision": 0.5569,
+    "recall": 0.5569,
+    "f1": 0.5569,
+    "roc_auc": 0.5
+  },
+  {
+    "model": "Majority Class",
+    "accuracy": 0.5296,
+    "precision": 0.5296,
+    "recall": 1.0,
+    "f1": 0.6925,
+    "roc_auc": 0.5
+  },
+  {
+    "model": "Raw LR (ablation)",
+    "accuracy": 0.5097,
+    "precision": 0.6084,
+    "recall": 0.2053,
+    "f1": 0.307,
+    "roc_auc": 0.5287,
+    "confusion_matrix": [
+      [
+        373,
+        65
+      ],
+      [
+        391,
+        101
+      ]
+    ]
+  },
+  {
+    "model": "Engineered LR",
+    "accuracy": 0.5199,
+    "precision": 0.5382,
+    "recall": 0.6585,
+    "f1": 0.5923,
+    "roc_auc": 0.524,
+    "confusion_matrix": [
+      [
+        159,
+        278
+      ],
+      [
+        168,
+        324
+      ]
+    ]
+  },
+  {
+    "model": "Engineered RF",
+    "accuracy": 0.5307,
+    "precision": 0.6176,
+    "recall": 0.2988,
+    "f1": 0.4027,
+    "roc_auc": 0.5417,
+    "confusion_matrix": [
+      [
+        346,
+        91
+      ],
+      [
+        345,
+        147
+      ]
+    ]
+  },
+  {
+    "model": "LR v2 (Top-25)",
+    "accuracy": 0.5306,
+    "precision": 0.5498,
+    "recall": 0.4942,
+    "f1": 0.5205,
+    "roc_auc": 0.5784,
+    "confusion_matrix": [
+      [
+        185,
+        140
+      ],
+      [
+        175,
+        171
+      ]
+    ]
+  },
+  {
+    "model": "RF v2 (Top-25 Pruned)",
+    "accuracy": 0.5499,
+    "precision": 0.5601,
+    "recall": 0.5925,
+    "f1": 0.5758,
+    "roc_auc": 0.5724,
+    "confusion_matrix": [
+      [
+        164,
+        161
+      ],
+      [
+        141,
+        205
+      ]
+    ]
+  },
+  {
+    "model": "LightGBM v2 (Top-25)",
+    "accuracy": 0.5529,
+    "precision": 0.5516,
+    "recall": 0.711,
+    "f1": 0.6212,
+    "roc_auc": 0.5744,
+    "confusion_matrix": [
+      [
+        125,
+        200
+      ],
+      [
+        100,
+        246
+      ]
+    ]
+  },
+  {
+    "model": "Ensemble v2 (Top-25)",
+    "accuracy": 0.5455,
+    "precision": 0.5501,
+    "recall": 0.6503,
+    "f1": 0.596,
+    "roc_auc": 0.5775,
+    "confusion_matrix": [
+      [
+        141,
+        184
+      ],
+      [
+        121,
+        225
+      ]
+    ]
+  }
+]

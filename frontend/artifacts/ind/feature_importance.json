@@ -1,0 +1,127 @@
+[
+  {
+    "feature": "vix_change",
+    "lgbm_importance": 150.0,
+    "lr_coef_abs": 0.363076
+  },
+  {
+    "feature": "ret_lag7",
+    "lgbm_importance": 63.0,
+    "lr_coef_abs": 0.089755
+  },
+  {
+    "feature": "rsi",
+    "lgbm_importance": 56.0,
+    "lr_coef_abs": 0.04469
+  },
+  {
+    "feature": "atr_norm_ret",
+    "lgbm_importance": 48.0,
+    "lr_coef_abs": 0.134821
+  },
+  {
+    "feature": "ret_lag10",
+    "lgbm_importance": 44.0,
+    "lr_coef_abs": 0.042665
+  },
+  {
+    "feature": "uso_ret1",
+    "lgbm_importance": 40.0,
+    "lr_coef_abs": 0.014791
+  },
+  {
+    "feature": "atr",
+    "lgbm_importance": 34.0,
+    "lr_coef_abs": 0.074029
+  },
+  {
+    "feature": "ret_lag5",
+    "lgbm_importance": 34.0,
+    "lr_coef_abs": 0.112321
+  },
+  {
+    "feature": "oil_spy_ratio",
+    "lgbm_importance": 33.0,
+    "lr_coef_abs": 0.057134
+  },
+  {
+    "feature": "vix_percentile",
+    "lgbm_importance": 32.0,
+    "lr_coef_abs": 0.029669
+  },
+  {
+    "feature": "overnight_gap",
+    "lgbm_importance": 32.0,
+    "lr_coef_abs": 0.002844
+  },
+  {
+    "feature": "gld_ret1",
+    "lgbm_importance": 32.0,
+    "lr_coef_abs": 0.114841
+  },
+  {
+    "feature": "vix_5d_change",
+    "lgbm_importance": 30.0,
+    "lr_coef_abs": 0.013472
+  },
+  {
+    "feature": "gld_ret21",
+    "lgbm_importance": 27.0,
+    "lr_coef_abs": 0.02366
+  },
+  {
+    "feature": "close_to_low",
+    "lgbm_importance": 22.0,
+    "lr_coef_abs": 0.004453
+  },
+  {
+    "feature": "close_to_high",
+    "lgbm_importance": 21.0,
+    "lr_coef_abs": 0.063116
+  },
+  {
+    "feature": "intraday_range",
+    "lgbm_importance": 17.0,
+    "lr_coef_abs": 0.045892
+  },
+  {
+    "feature": "weekly_ret",
+    "lgbm_importance": 15.0,
+    "lr_coef_abs": 0.049068
+  },
+  {
+    "feature": "volume_dev",
+    "lgbm_importance": 14.0,
+    "lr_coef_abs": 0.016956
+  },
+  {
+    "feature": "stoch_k",
+    "lgbm_importance": 11.0,
+    "lr_coef_abs": 0.053004
+  },
+  {
+    "feature": "range_compression",
+    "lgbm_importance": 9.0,
+    "lr_coef_abs": 0.071528
+  },
+  {
+    "feature": "ret_lag8",
+    "lgbm_importance": 6.0,
+    "lr_coef_abs": 0.005391
+  },
+  {
+    "feature": "roc",
+    "lgbm_importance": 4.0,
+    "lr_coef_abs": 0.048668
+  },
+  {
+    "feature": "vix_above_ma20",
+    "lgbm_importance": 1.0,
+    "lr_coef_abs": 0.095759
+  },
+  {
+    "feature": "bb_width",
+    "lgbm_importance": 0.0,
+    "lr_coef_abs": 0.013751
+  }
+]
